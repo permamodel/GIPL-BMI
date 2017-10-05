@@ -1,0 +1,13 @@
+# Build the code
+mkdir _build
+cd _build
+cmake ../ 
+make
+
+# Run the tests
+make test
+
+# Compare new output files (whole directory)
+echo " "
+echo "Checking for differences in output directory..."
+diff ../examples/out ../examples/out_baseline
