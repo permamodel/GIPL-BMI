@@ -1,0 +1,19 @@
+Authors: Elchin Jafarov and Scott Stewart 
+date: 10/20/2017
+
+This version is same as https://github.com/Elchin/GIPL
+EJ introduced some minor changes for convinience. These changes do not affect calculation scheme. 
+The "code" folder has the original benchmarking version of the code, which will be used to compare "bmi-gipl" version. 
+The "in" and "out" folders contain input and output files correspodingly, and should be used for comparison with the "bmi-gipl" inputs and outputs. 
+
+To compile, go to the "code" folder and type:
+> make
+
+This will produce executable file "gipl" in the upper folder "../". 
+To run the calculations go one folder up and run:
+> ./gipl
+
+Check output files in the "out" folder. Use these files for further benchmarking.
+
+
+ 

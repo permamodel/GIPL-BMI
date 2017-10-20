@@ -9,5 +9,17 @@ make test
 
 # Compare new output files (whole directory)
 echo " "
-echo "Checking for differences in output directory..."
-diff ../examples/out ../examples/out_baseline
+echo "Checking for differences in benchmarking input directory..."
+echo "NOTE: that only config files are different..."
+#cmp examples/gipl_cfg.cfg 	examples/benchmark/in/gipl_config.cfg
+cmp examples/bound.txt  	examples/benchmark/in/bound.txt 
+cmp examples/grid.txt  		examples/benchmark/in/grid.txt
+cmp examples/initial.txt  	examples/benchmark/in/initial.txt
+cmp examples/mineral.txt	examples/benchmark/in/mineral.txt
+cmp examples/organic.txt	examples/benchmark/in/organic.txt
+cmp examples/rsnow.txt		examples/benchmark/in/rsnow.txt	
+cmp examples/snow.txt		examples/benchmark/in/snow.txt
+cmp examples/sites.txt		examples/benchmark/in/sites.txt
+
+echo "Checking for differences in benchmarking output directory..."
+diff examples/out/ 		examples/benchmark/out/
