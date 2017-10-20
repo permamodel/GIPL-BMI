@@ -84,6 +84,11 @@ target/
 # celery beat schedule file
 celerybeat-schedule
 
+# all fortran mods and exe
+examples/benchmark/gipl
+examples/benchmark/code/*mod
+examples/benchmark/code/*o
+
 # dotenv
 .env
 
